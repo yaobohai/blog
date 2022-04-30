@@ -22,6 +22,7 @@ jobs:
       run: |
         sudo npm install hexo-cli -g
         sudo npm install
+        sudo npm install --save hexo-theme-fluid
         sudo pip install coscmd
         sudo pip install tccli
 
