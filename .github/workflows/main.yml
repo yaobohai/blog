@@ -18,6 +18,13 @@ jobs:
       with:
         node-version: "v16.13.1"
 
+    - name: Install
+      run: |
+        sudo npm install hexo-cli -g
+        sudo npm install
+        sudo pip install coscmd
+        sudo pip install tccli
+
     - name: Config Env
       env:
         SECRET_ID: ${{ secrets.COS_API_ID }}
@@ -29,13 +36,6 @@ jobs:
         tccli configure set secretId $SECRET_ID
         tccli configure set secretKey $SECRET_KEY
         tccli configure set region $REGION
-
-    - name: Install
-      run: |
-        sudo npm install hexo-cli -g
-        sudo npm install
-        sudo pip install coscmd
-        sudo pip install tccli
 
     - name: Build
       run: |
