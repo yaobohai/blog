@@ -16,7 +16,7 @@ jobs:
     - name: Install Node
       uses: actions/setup-node@master
       with:
-        node-version: "11.x"
+        node-version: "v16.13.1"
 
     - name: Install
       run: |
