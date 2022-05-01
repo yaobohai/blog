@@ -26,6 +26,14 @@ npm install -g cnpm --registry==https://registry.npm.taobao.org
 sudo cnpm install -g hexo-cli
 ```
 
+克隆项目
+
+```shell
+git clone https://github.com/yaobohai/blog.git
+cd blog
+```
+
+
 运行hexo
 
 ```shell
