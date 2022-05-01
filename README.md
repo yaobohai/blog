@@ -37,7 +37,8 @@ cd blog
 运行hexo
 
 ```shell
-$ hexo s
+npm install
+hexo s
 ```
 
 返回一下信息说明启动成功；访问 `http://localhost:4000/` 即可打开页面
