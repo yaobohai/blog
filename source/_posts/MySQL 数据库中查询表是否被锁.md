@@ -1,3 +1,9 @@
+---
+title: MySQL 数据库中查询表是否被锁
+
+index_img: https://d1.awsstatic.com/asset-repository/products/amazon-rds/1024px-MySQL.ff87215b43fd7292af172e2a5d9b844217262571.png
+---
+
 由于线上数据库有一个字段类型太小，导致数据溢出产生了线上 bug。现需将 days 字段由 tinyint(3) 类型变更为 smallint(5)。变更数据库要考虑该操作是否会发生锁表操作？发生了锁表对当前业务是否会有致命影响？
 
 查阅了一下网上的资料，发现 `5.6.11` 之后 `alter` 操作“大部分”都是不会锁表了。因此，我想确认一下：我要执行的 SQL 到底是否会锁表呢？
